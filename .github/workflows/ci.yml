@@ -40,8 +40,8 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: >
-          ./gradlew sonar
+          ./gradlew test jacocoTestReport sonar
           -Dsonar.projectKey=sharu2501
-          -Dsonar.organization=sharu2501
+          -Dsonar.organization=Sasikumar Sahkana
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.coverage.jacoco.xmlReportPaths=build/reports/jacoco/test/jacocoTestReport.xml
