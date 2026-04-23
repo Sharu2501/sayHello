@@ -42,3 +42,12 @@ jacocoTestReport {
         csv.required = false
     }
 }
+
+sonar {
+    properties {
+        property "sonar.projectKey", "sharu2501"
+        property "sonar.organization", "Sasikumar Sahkana"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
+    }
+}
